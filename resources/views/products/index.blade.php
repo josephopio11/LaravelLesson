@@ -12,8 +12,11 @@
   <body>
       <div class="container">
           <h1>Products</h1>
-          <p>{{ $title }}</p>
-          <p>{{ $description }}</p>
+          @foreach ($data as $item)
+              <p>
+                  {{ $item }}
+              </p>
+          @endforeach
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
