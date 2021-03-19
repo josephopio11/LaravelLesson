@@ -17,5 +17,5 @@ use Illuminate\Routing\Route as RoutingRoute;
 
 // New to Laravel 8
 Route::get('/products', [ProductsController::class, 'index']);
-Route::get('/products/about', [ProductsController::class, 'about']);
 
+Route::get('/products/{id}', [ProductsController::class, 'show']);
