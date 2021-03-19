@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <h1>Products</h1>
-        <p>{{ $products }}</p>
+        <a href="{{ route('products') }}">Products</a>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

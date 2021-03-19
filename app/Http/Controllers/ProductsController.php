@@ -6,18 +6,10 @@ class ProductsController extends Controller
 {
     public function index()
     {
-        $title       = "Welcome to my Course";
-        $description = "Created by Joseph Opio";
 
-        $data = [
-            'productOne' => 'iPhone',
-            'productTwo' => 'Samsung',
-        ];
+        print_r(route('products'));
 
-        // Return directly to the vew
-        return view('products.index', [
-            'data' => $data,
-        ]);
+        return view('products.index');
     }
 
     public function about()
